@@ -46,8 +46,9 @@
         scanf("%d", &turistico1);
         printf("\n");
 
+        //calculo da primeira carta 
         densidadepopulacional1 = (float) populacao1 / area1;
-        
+
         pibpercapita1 = (float) pib1 / populacao1;
 
 
@@ -95,7 +96,7 @@
         scanf("%d", &turistico2);
         printf("\n");
 
-
+        //calculo da segunda carta
         densidadepopulacional2 = (float) populacao2 / area2;
         
         pibpercapita2 = (float) pib2 / populacao2;
