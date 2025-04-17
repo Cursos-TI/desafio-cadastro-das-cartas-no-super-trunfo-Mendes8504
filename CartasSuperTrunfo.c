@@ -13,7 +13,7 @@
         float densidadepopulacional1, densidadepopulacional2;
         float pibpercapita1, pibpercapita2;
         float superpoder1, superpoder2;
-
+        int Cpopulacao, Carea, Cpib, Cturistico, Cdensidade, Cpibpercapita, Csuperpoder;
 
         //"cabeçalho" do programa
         printf("----Super Trunfo----\n\n");
@@ -124,17 +124,29 @@
         printf("Super Poder: %.2f\n--------------------------------\n\n", superpoder2);
 
 
+        //Calculo de comparação entres os atributos de cada carta
+        Cpopulacao = populacao1 > populacao2;
+        Carea = area1 > area2;
+        Cpib = pib1 > pib2;
+        Cturistico = turistico1 > turistico2;
+        Cdensidade = densidadepopulacional1 < densidadepopulacional2;
+        Cpibpercapita = pibpercapita1 > pibpercapita2;
+        Csuperpoder = superpoder1 > superpoder2;
+
+
+
+
         //saida da comparação dos dados das cartas
         printf("---Comparação de Cartas---\n\n");
         printf("Se o resultado for (1) a Carta 01 venceu se for (0) a Carta 02 venceu\n\n");
         
-        printf("População: %d\n", populacao1 > populacao2);
-        printf("Área: %d \n",(int) area1 > area2);
-        printf("PIB: %d \n", (int) pib1 > pib2);
-        printf("Pontos Turisticos: %d \n", turistico1 > turistico2);
-        printf("Densidade Populacional: %d \n",(int) (1 /densidadepopulacional1) < (1 / densidadepopulacional2));
-        printf("PIB per Capita: %d \n", (int) pibpercapita1 > pibpercapita2);
-        printf("super poder: %d \n", (int) superpoder1 > superpoder2);
+        printf("População : %d \n", Cpopulacao);
+        printf("Área : %d \n", Carea);
+        printf("PIB : %d \n", Cpib);
+        printf("Pontos Turisticos : %d \n", Cturistico);
+        printf("Densidade populacional : %d \n", Cdensidade);
+        printf("PIB per Capita : %d \n", Cpibpercapita);
+        printf("Super Poder : %d \n", Csuperpoder);
 
 
 
